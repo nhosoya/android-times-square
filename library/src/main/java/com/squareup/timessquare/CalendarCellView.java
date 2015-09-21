@@ -4,10 +4,14 @@ package com.squareup.timessquare;
 
 import android.content.Context;
 import android.util.AttributeSet;
+import android.view.LayoutInflater;
+import android.view.ViewGroup;
+import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.TextView;
 import com.squareup.timessquare.MonthCellDescriptor.RangeState;
 
-public class CalendarCellView extends TextView {
+public class CalendarCellView extends FrameLayout {
   private static final int[] STATE_SELECTABLE = {
       R.attr.tsquare_state_selectable
   };
@@ -30,6 +34,10 @@ public class CalendarCellView extends TextView {
       R.attr.tsquare_state_range_last
   };
 
+  public TextView dateText;
+  public ImageView topRightImage;
+  public ViewGroup bottomLeftLayout;
+
   private boolean isSelectable = false;
   private boolean isCurrentMonth = false;
   private boolean isToday = false;
@@ -39,6 +47,14 @@ public class CalendarCellView extends TextView {
   @SuppressWarnings("UnusedDeclaration") //
   public CalendarCellView(Context context, AttributeSet attrs) {
     super(context, attrs);
+    init();
+  }
+
+  private void init() {
+    LayoutInflater.from(getContext()).inflate(R.layout.day, this);
+    this.dateText = (TextView) findViewById(R.id.dateText);
+    this.topRightImage = (ImageView) findViewById(R.id.top_right_image);
+    this.bottomLeftLayout = (ViewGroup) findViewById(R.id.bottom_left_layout);
   }
 
   public void setSelectable(boolean isSelectable) {
