@@ -5,39 +5,26 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     >
-  <com.squareup.timessquare.CalendarCellView
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      style="@style/CalendarCell.CalendarDate"
-      />
-  <com.squareup.timessquare.CalendarCellView
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      style="@style/CalendarCell.CalendarDate"
-      />
-  <com.squareup.timessquare.CalendarCellView
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      style="@style/CalendarCell.CalendarDate"
-      />
-  <com.squareup.timessquare.CalendarCellView
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      style="@style/CalendarCell.CalendarDate"
-      />
-  <com.squareup.timessquare.CalendarCellView
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      style="@style/CalendarCell.CalendarDate"
-      />
-  <com.squareup.timessquare.CalendarCellView
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      style="@style/CalendarCell.CalendarDate"
-      />
-  <com.squareup.timessquare.CalendarCellView
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      style="@style/CalendarCell.CalendarDate"
-      />
+
+    <com.squareup.timessquare.CalendarCellView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <com.squareup.timessquare.CalendarCellView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <com.squareup.timessquare.CalendarCellView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <com.squareup.timessquare.CalendarCellView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <com.squareup.timessquare.CalendarCellView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <com.squareup.timessquare.CalendarCellView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <com.squareup.timessquare.CalendarCellView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 </com.squareup.timessquare.CalendarRowView>

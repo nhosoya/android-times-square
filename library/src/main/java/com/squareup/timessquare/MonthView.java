@@ -112,8 +112,8 @@ public class MonthView extends LinearLayout {
           CalendarCellView cellView = (CalendarCellView) weekRow.getChildAt(c);
 
           String cellDate = Integer.toString(cell.getValue());
-          if (!cellView.getText().equals(cellDate)) {
-            cellView.setText(cellDate);
+          if (!cellView.dateText.getText().equals(cellDate)) {
+            cellView.dateText.setText(cellDate);
           }
           cellView.setEnabled(cell.isCurrentMonth());
           cellView.setClickable(!displayOnly);

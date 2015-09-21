@@ -93,7 +93,10 @@ public class CalendarRowView extends ViewGroup implements View.OnClickListener {
 
   public void setCellTextColor(ColorStateList colors) {
     for (int i = 0; i < getChildCount(); i++) {
-      ((TextView) getChildAt(i)).setTextColor(colors);
+      if (getChildAt(i) instanceof ViewGroup) {
+        CalendarCellView cellView = (CalendarCellView) getChildAt(i);
+        cellView.dateText.setTextColor(colors);
+      }
     }
   }
 
