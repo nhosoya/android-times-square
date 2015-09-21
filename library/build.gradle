@@ -32,11 +32,11 @@ android {
   }
 }
 
-dependencies {
-  testCompile deps.festandroid
-  testCompile deps.junit
-  testCompile deps.robolectric
-  testCompile deps.intellijannotations
-}
-
-apply from: rootProject.file('gradle/gradle-mvn-push.gradle')
+//dependencies {
+//  testCompile deps.festandroid
+//  testCompile deps.junit
+//  testCompile deps.robolectric
+//  testCompile deps.intellijannotations
+//}
+//
+//apply from: rootProject.file('gradle/gradle-mvn-push.gradle')
