@@ -8,19 +8,21 @@
         style="@style/CalendarCell.CalendarDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="top|left" />
+        android:layout_gravity="top|left"
+        android:layout_marginLeft="2dp" />
 
     <ImageView
         android:id="@+id/top_right_image"
         android:layout_width="10dp"
         android:layout_height="10dp"
-        android:layout_gravity="top|right" />
+        android:layout_gravity="top|right"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="4dp" />
 
     <LinearLayout
         android:id="@+id/bottom_left_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|left"
-        android:orientation="horizontal">
-    </LinearLayout>
+        android:orientation="horizontal"></LinearLayout>
 </FrameLayout>
